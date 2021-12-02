@@ -1,0 +1,1 @@
+/home/fxs1l/.config/scripts/change_led.sh
