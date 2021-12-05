@@ -9,6 +9,7 @@ formfactor=2
 immutability=1
 isPreferredForShortcuts=false
 lastScreen=11
+layoutId=
 location=4
 name=
 onPrimary=true
@@ -30,17 +31,51 @@ PreloadWeight=0
 
 [Containments][110][Applets][111][Configuration][General]
 isInLatteDock=true
-launchers59=applications:firefox.desktop,applications:spotify.desktop,applications:android-studio.desktop,applications:arduino-ide.desktop,applications:vscodium.desktop,applications:libreoffice-startcenter.desktop,applications:org.kde.konsole.desktop,applications:Zoom.desktop,applications:org.kde.dolphin.desktop,applications:systemsettings.desktop
+launchers59=applications:steam.desktop,applications:firefox.desktop,applications:Zoom.desktop,applications:discord.desktop,applications:spotify.desktop,applications:libreoffice-startcenter.desktop,applications:vscodium.desktop,applications:android-studio.desktop,applications:arduino-ide.desktop,applications:org.kde.konsole.desktop,applications:org.kde.dolphin.desktop,applications:systemsettings.desktop
+manualScrollTasksType=Disabled
 scrollTasksEnabled=true
+
+[Containments][110][Applets][128]
+immutability=1
+plugin=org.kde.plasma.kickerdash
+
+[Containments][110][Applets][128][Configuration]
+PreloadWeight=0
+
+[Containments][110][Applets][128][Configuration][ConfigDialog]
+DialogHeight=840
+DialogWidth=1120
+
+[Containments][110][Applets][128][Configuration][General]
+customButtonImage=/home/fxs1l/Pictures/Logos/Arch/logo2.png
+favoriteSystemActions=logout
+favoritesPortedToKAstats=true
+useCustomButtonImage=true
+
+[Containments][110][Applets][129]
+immutability=1
+plugin=org.kde.latte.separator
+
+[Containments][110][Applets][129][Configuration]
+PreloadWeight=0
+
+[Containments][110][Applets][129][Configuration][ConfigDialog]
+DialogHeight=840
+DialogWidth=1120
+
+[Containments][110][Applets][129][Configuration][General]
+lengthMargin=6
+thickMargin=11
 
 [Containments][110][Configuration]
 PreloadWeight=0
 
 [Containments][110][General]
 alignmentUpgraded=true
-appletOrder=111
+appletOrder=128;129;111
 backgroundRadius=50
 iconSize=78
+inConfigureAppletsMode=true
 lastDodgeVisibilityMode=4
 panelSize=28
 panelTransparency=20
@@ -60,6 +95,7 @@ formfactor=2
 immutability=1
 isPreferredForShortcuts=false
 lastScreen=11
+layoutId=
 location=3
 name=
 onPrimary=true
@@ -77,11 +113,11 @@ immutability=1
 plugin=org.kde.plasma.eventcalendar
 
 [Containments][12][Applets][113][Configuration]
-PreloadWeight=0
+PreloadWeight=2
 
 [Containments][12][Applets][113][Configuration][ConfigDialog]
-DialogHeight=1054
-DialogWidth=1360
+DialogHeight=869
+DialogWidth=1184
 
 [Containments][12][Applets][113][Configuration][General]
 clockLine2HeightRatio=0.37
@@ -93,11 +129,11 @@ v71Migration=true
 v72Migration=true
 
 [Containments][12][Applets][113][Configuration][Google Calendar]
-accessToken=ya29.a0ARrdaM8o7CJom_pmNnGcjCU8eXKircCb4pk0TNvgT4wmZ41pCZFqbtVMhaJZYPu2gFgZwAnsRIqQdwB_gso4GOEFrKfxb8vnHtzFpcMqQ8px0LN0xUvlPDY3ouD7EJ6hjDj_nbKFOzA8_3unhwvHKS1Fd49JPg
-accessTokenExpiresAt=822545649
+accessToken=ya29.a0ARrdaM9eDENePowFpRCHRotS4ND3_3vTYZAWfnsnfEJXA4JMnpfgElebSoLL-ri6nqYCD7NsnAqjypBLQ0wes5F-_hwDfbMBkEOP_sUeMVpdHMmooMEGZSQ1T9V3EE-vKnwmjf7hC2GZFa5SNMDJWkgyQvKom6Q
+accessTokenExpiresAt=2041228407
 accessTokenType=Bearer
-calendarIdList=abacasio@up.edu.ph
-calendarList=W3sia2luZCI6ImNhbGVuZGFyI2NhbGVuZGFyTGlzdEVudHJ5IiwiZXRhZyI6IlwiMTYzMjI4ODA5MDc1MTAwMFwiIiwiaWQiOiJjX2NsYXNzcm9vbTYwNzE3MTdmQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20iLCJzdW1tYXJ5IjoiV2VpZ2h0IFRyYWluaW5nIE0xMC0xMiBNREUiLCJ0aW1lWm9uZSI6IlVUQyIsImNvbG9ySWQiOiIxNiIsImJhY2tncm91bmRDb2xvciI6IiMxOTY3ZDIiLCJmb3JlZ3JvdW5kQ29sb3IiOiIjZmZmZmZmIiwic2VsZWN0ZWQiOnRydWUsImFjY2Vzc1JvbGUiOiJyZWFkZXIiLCJkZWZhdWx0UmVtaW5kZXJzIjpbXSwiY29uZmVyZW5jZVByb3BlcnRpZXMiOnsiYWxsb3dlZENvbmZlcmVuY2VTb2x1dGlvblR5cGVzIjpbImhhbmdvdXRzTWVldCJdfX0seyJraW5kIjoiY2FsZW5kYXIjY2FsZW5kYXJMaXN0RW50cnkiLCJldGFnIjoiXCIxNjMyMzU3Njg1MDU2MDAwXCIiLCJpZCI6ImFkZHJlc3Nib29rI2NvbnRhY3RzQGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbSIsInN1bW1hcnkiOiJCaXJ0aGRheXMiLCJkZXNjcmlwdGlvbiI6IkRpc3BsYXlzIGJpcnRoZGF5cywgYW5uaXZlcnNhcmllcywgYW5kIG90aGVyIGV2ZW50IGRhdGVzIG9mIHBlb3BsZSBpbiBHb29nbGUgQ29udGFjdHMuIiwidGltZVpvbmUiOiJBc2lhL01hbmlsYSIsImNvbG9ySWQiOiIxMyIsImJhY2tncm91bmRDb2xvciI6IiM5MmUxYzAiLCJmb3JlZ3JvdW5kQ29sb3IiOiIjMDAwMDAwIiwic2VsZWN0ZWQiOnRydWUsImFjY2Vzc1JvbGUiOiJyZWFkZXIiLCJkZWZhdWx0UmVtaW5kZXJzIjpbXSwiY29uZmVyZW5jZVByb3BlcnRpZXMiOnsiYWxsb3dlZENvbmZlcmVuY2VTb2x1dGlvblR5cGVzIjpbImhhbmdvdXRzTWVldCJdfX0seyJraW5kIjoiY2FsZW5kYXIjY2FsZW5kYXJMaXN0RW50cnkiLCJldGFnIjoiXCIxNjMyNDQ0MTcwMjYyMDAwXCIiLCJpZCI6ImVuLnBoaWxpcHBpbmVzI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29tIiwic3VtbWFyeSI6IkhvbGlkYXlzIGluIFBoaWxpcHBpbmVzIiwiZGVzY3JpcHRpb24iOiJIb2xpZGF5cyBhbmQgT2JzZXJ2YW5jZXMgaW4gUGhpbGlwcGluZXMiLCJ0aW1lWm9uZSI6IkFzaWEvTWFuaWxhIiwic3VtbWFyeU92ZXJyaWRlIjoiSG9saWRheXMgaW4gUGhpbGlwcGluZXMiLCJjb2xvcklkIjoiOCIsImJhY2tncm91bmRDb2xvciI6IiMxNmE3NjUiLCJmb3JlZ3JvdW5kQ29sb3IiOiIjMDAwMDAwIiwic2VsZWN0ZWQiOnRydWUsImFjY2Vzc1JvbGUiOiJyZWFkZXIiLCJkZWZhdWx0UmVtaW5kZXJzIjpbXSwiY29uZmVyZW5jZVByb3BlcnRpZXMiOnsiYWxsb3dlZENvbmZlcmVuY2VTb2x1dGlvblR5cGVzIjpbImhhbmdvdXRzTWVldCJdfX0seyJraW5kIjoiY2FsZW5kYXIjY2FsZW5kYXJMaXN0RW50cnkiLCJldGFnIjoiXCIxNjMyNDQ0MTcxODM0MDAwXCIiLCJpZCI6ImFiYWNhc2lvQHVwLmVkdS5waCIsInN1bW1hcnkiOiJhYmFjYXNpb0B1cC5lZHUucGgiLCJ0aW1lWm9uZSI6IkFzaWEvTWFuaWxhIiwiY29sb3JJZCI6IjE0IiwiYmFja2dyb3VuZENvbG9yIjoiIzlmZTFlNyIsImZvcmVncm91bmRDb2xvciI6IiMwMDAwMDAiLCJzZWxlY3RlZCI6dHJ1ZSwiYWNjZXNzUm9sZSI6Im93bmVyIiwiZGVmYXVsdFJlbWluZGVycyI6W3sibWV0aG9kIjoicG9wdXAiLCJtaW51dGVzIjoxMH1dLCJub3RpZmljYXRpb25TZXR0aW5ncyI6eyJub3RpZmljYXRpb25zIjpbeyJ0eXBlIjoiZXZlbnRDcmVhdGlvbiIsIm1ldGhvZCI6ImVtYWlsIn0seyJ0eXBlIjoiZXZlbnRDaGFuZ2UiLCJtZXRob2QiOiJlbWFpbCJ9LHsidHlwZSI6ImV2ZW50Q2FuY2VsbGF0aW9uIiwibWV0aG9kIjoiZW1haWwifSx7InR5cGUiOiJldmVudFJlc3BvbnNlIiwibWV0aG9kIjoiZW1haWwifV19LCJwcmltYXJ5Ijp0cnVlLCJjb25mZXJlbmNlUHJvcGVydGllcyI6eyJhbGxvd2VkQ29uZmVyZW5jZVNvbHV0aW9uVHlwZXMiOlsiaGFuZ291dHNNZWV0Il19fV0=
+calendarIdList=abacasio@up.edu.ph,ivk850i09fiankfvebckmqnitdisko60@import.calendar.google.com,c_classroom6071717f@group.calendar.google.com
+calendarList=W3sia2luZCI6ImNhbGVuZGFyI2NhbGVuZGFyTGlzdEVudHJ5IiwiZXRhZyI6IlwiMTYzMjI4ODA5MDc1MTAwMFwiIiwiaWQiOiJjX2NsYXNzcm9vbTYwNzE3MTdmQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20iLCJzdW1tYXJ5IjoiV2VpZ2h0IFRyYWluaW5nIE0xMC0xMiBNREUiLCJ0aW1lWm9uZSI6IlVUQyIsImNvbG9ySWQiOiIxNiIsImJhY2tncm91bmRDb2xvciI6IiMxOTY3ZDIiLCJmb3JlZ3JvdW5kQ29sb3IiOiIjZmZmZmZmIiwic2VsZWN0ZWQiOnRydWUsImFjY2Vzc1JvbGUiOiJyZWFkZXIiLCJkZWZhdWx0UmVtaW5kZXJzIjpbXSwiY29uZmVyZW5jZVByb3BlcnRpZXMiOnsiYWxsb3dlZENvbmZlcmVuY2VTb2x1dGlvblR5cGVzIjpbImhhbmdvdXRzTWVldCJdfX0seyJraW5kIjoiY2FsZW5kYXIjY2FsZW5kYXJMaXN0RW50cnkiLCJldGFnIjoiXCIxNjMyMzU3Njg1MDU2MDAwXCIiLCJpZCI6ImFkZHJlc3Nib29rI2NvbnRhY3RzQGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbSIsInN1bW1hcnkiOiJCaXJ0aGRheXMiLCJkZXNjcmlwdGlvbiI6IkRpc3BsYXlzIGJpcnRoZGF5cywgYW5uaXZlcnNhcmllcywgYW5kIG90aGVyIGV2ZW50IGRhdGVzIG9mIHBlb3BsZSBpbiBHb29nbGUgQ29udGFjdHMuIiwidGltZVpvbmUiOiJBc2lhL01hbmlsYSIsImNvbG9ySWQiOiIxMyIsImJhY2tncm91bmRDb2xvciI6IiM5MmUxYzAiLCJmb3JlZ3JvdW5kQ29sb3IiOiIjMDAwMDAwIiwic2VsZWN0ZWQiOnRydWUsImFjY2Vzc1JvbGUiOiJyZWFkZXIiLCJkZWZhdWx0UmVtaW5kZXJzIjpbXSwiY29uZmVyZW5jZVByb3BlcnRpZXMiOnsiYWxsb3dlZENvbmZlcmVuY2VTb2x1dGlvblR5cGVzIjpbImhhbmdvdXRzTWVldCJdfX0seyJraW5kIjoiY2FsZW5kYXIjY2FsZW5kYXJMaXN0RW50cnkiLCJldGFnIjoiXCIxNjMyNDQ0MTcxODM0MDAwXCIiLCJpZCI6ImFiYWNhc2lvQHVwLmVkdS5waCIsInN1bW1hcnkiOiJhYmFjYXNpb0B1cC5lZHUucGgiLCJ0aW1lWm9uZSI6IkFzaWEvTWFuaWxhIiwiY29sb3JJZCI6IjE0IiwiYmFja2dyb3VuZENvbG9yIjoiIzlmZTFlNyIsImZvcmVncm91bmRDb2xvciI6IiMwMDAwMDAiLCJzZWxlY3RlZCI6dHJ1ZSwiYWNjZXNzUm9sZSI6Im93bmVyIiwiZGVmYXVsdFJlbWluZGVycyI6W3sibWV0aG9kIjoicG9wdXAiLCJtaW51dGVzIjoxMH1dLCJub3RpZmljYXRpb25TZXR0aW5ncyI6eyJub3RpZmljYXRpb25zIjpbeyJ0eXBlIjoiZXZlbnRDcmVhdGlvbiIsIm1ldGhvZCI6ImVtYWlsIn0seyJ0eXBlIjoiZXZlbnRDaGFuZ2UiLCJtZXRob2QiOiJlbWFpbCJ9LHsidHlwZSI6ImV2ZW50Q2FuY2VsbGF0aW9uIiwibWV0aG9kIjoiZW1haWwifSx7InR5cGUiOiJldmVudFJlc3BvbnNlIiwibWV0aG9kIjoiZW1haWwifV19LCJwcmltYXJ5Ijp0cnVlLCJjb25mZXJlbmNlUHJvcGVydGllcyI6eyJhbGxvd2VkQ29uZmVyZW5jZVNvbHV0aW9uVHlwZXMiOlsiaGFuZ291dHNNZWV0Il19fSx7ImtpbmQiOiJjYWxlbmRhciNjYWxlbmRhckxpc3RFbnRyeSIsImV0YWciOiJcIjE2MzY1NTMxMzc3ODQwMDBcIiIsImlkIjoiaXZrODUwaTA5ZmlhbmtmdmViY2ttcW5pdGRpc2tvNjBAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20iLCJzdW1tYXJ5IjoiaHR0cHM6Ly91dmxlLnVwZC5lZHUucGgvY2FsZW5kYXIvZXhwb3J0X2V4ZWN1dGUucGhwP3VzZXJpZD0xMzU0OCZhdXRodG9rZW49N2IxY2E5OTIyOTI0MzNjMGY4MTEwYWI5MWNlODc2NGY4ZTBkMTBiMCZwcmVzZXRfd2hhdD1hbGwmcHJlc2V0X3RpbWU9cmVjZW50dXBjb21pbmciLCJ0aW1lWm9uZSI6IlVUQyIsInN1bW1hcnlPdmVycmlkZSI6IlVWTGUiLCJjb2xvcklkIjoiNyIsImJhY2tncm91bmRDb2xvciI6IiM0MmQ2OTIiLCJmb3JlZ3JvdW5kQ29sb3IiOiIjMDAwMDAwIiwic2VsZWN0ZWQiOnRydWUsImFjY2Vzc1JvbGUiOiJyZWFkZXIiLCJkZWZhdWx0UmVtaW5kZXJzIjpbeyJtZXRob2QiOiJwb3B1cCIsIm1pbnV0ZXMiOjE1fV0sImNvbmZlcmVuY2VQcm9wZXJ0aWVzIjp7ImFsbG93ZWRDb25mZXJlbmNlU29sdXRpb25UeXBlcyI6WyJoYW5nb3V0c01lZXQiXX19LHsia2luZCI6ImNhbGVuZGFyI2NhbGVuZGFyTGlzdEVudHJ5IiwiZXRhZyI6IlwiMTYzNjU1MzE1MTIwOTAwMFwiIiwiaWQiOiJlbi5waGlsaXBwaW5lcyNob2xpZGF5QGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbSIsInN1bW1hcnkiOiJIb2xpZGF5cyBpbiBQaGlsaXBwaW5lcyIsImRlc2NyaXB0aW9uIjoiSG9saWRheXMgYW5kIE9ic2VydmFuY2VzIGluIFBoaWxpcHBpbmVzIiwidGltZVpvbmUiOiJBc2lhL01hbmlsYSIsInN1bW1hcnlPdmVycmlkZSI6IkhvbGlkYXlzIGluIFBoaWxpcHBpbmVzIiwiY29sb3JJZCI6IjE1IiwiYmFja2dyb3VuZENvbG9yIjoiIzlmYzZlNyIsImZvcmVncm91bmRDb2xvciI6IiMwMDAwMDAiLCJzZWxlY3RlZCI6dHJ1ZSwiYWNjZXNzUm9sZSI6InJlYWRlciIsImRlZmF1bHRSZW1pbmRlcnMiOltdLCJjb25mZXJlbmNlUHJvcGVydGllcyI6eyJhbGxvd2VkQ29uZmVyZW5jZVNvbHV0aW9uVHlwZXMiOlsiaGFuZ291dHNNZWV0Il19fV0=
 refreshToken=1//0e6Y594SDGwOqCgYIARAAGA4SNwF-L9IrT2FjZfdc-295BYR91bWsAy9apdiFv34Z_xCz6UChXrakI4UbqLpjZpJXCBMU1U2xUGQ
 sessionClientId=391436299960-k0s16nm589meovhoblpcquqgbbrena17.apps.googleusercontent.com
 sessionClientSecret=Gdr_7lKIQuGBD4Up3MOiw-7i
@@ -113,12 +149,40 @@ plugin=org.kde.plasma.pager
 [Containments][12][Applets][114][Configuration]
 PreloadWeight=0
 
+[Containments][12][Applets][114][Configuration][ConfigDialog]
+DialogHeight=840
+DialogWidth=1120
+
+[Containments][12][Applets][131]
+immutability=1
+plugin=org.kde.latte.separator
+
+[Containments][12][Applets][131][Configuration]
+PreloadWeight=0
+
+[Containments][12][Applets][132]
+immutability=1
+plugin=org.kde.plasma.colorpicker
+
+[Containments][12][Applets][132][Configuration]
+PreloadWeight=0
+
+[Containments][12][Applets][132][Configuration][General]
+history=#261950
+
+[Containments][12][Applets][134]
+immutability=1
+plugin=org.kde.latte.separator
+
+[Containments][12][Applets][134][Configuration]
+PreloadWeight=0
+
 [Containments][12][Applets][44]
 immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][12][Applets][44][Configuration]
-PreloadWeight=92
+PreloadWeight=100
 SystrayContainmentId=13
 
 [Containments][12][Configuration]
@@ -127,13 +191,17 @@ PreloadWeight=0
 [Containments][12][General]
 alignment=2
 alignmentUpgraded=true
-appletOrder=114;113;44
+appletOrder=114;113;131;132;134;44
+autoSizeEnabled=false
 backgroundRadius=35
 configurationSticker=true
+hideFloatingGapForMaximized=true
 iconSize=36
+inConfigureAppletsMode=true
 lastSidebarVisibilityMode=9
 lengthExtMargin=10
-maxLength=58
+lockedZoomApplets=114;113;44
+maxLength=25
 offset=1
 panelOutline=true
 panelSize=100
@@ -161,6 +229,7 @@ activityId=
 formfactor=2
 immutability=1
 lastScreen=11
+layoutId=
 location=3
 plugin=org.kde.plasma.private.systemtray
 wallpaperplugin=org.kde.image
@@ -172,11 +241,25 @@ plugin=org.kde.plasma.keyboardlayout
 [Containments][13][Applets][105][Configuration]
 PreloadWeight=0
 
-[Containments][13][Applets][117]
+[Containments][13][Applets][115]
+immutability=1
+plugin=org.kde.plasma.manage-inputmethod
+
+[Containments][13][Applets][115][Configuration]
+PreloadWeight=0
+
+[Containments][13][Applets][124]
+immutability=1
+plugin=org.kde.plasma.printmanager
+
+[Containments][13][Applets][124][Configuration]
+PreloadWeight=0
+
+[Containments][13][Applets][135]
 immutability=1
 plugin=org.kde.plasma.mediacontroller
 
-[Containments][13][Applets][117][Configuration]
+[Containments][13][Applets][135][Configuration]
 PreloadWeight=42
 
 [Containments][13][Applets][46]
@@ -184,7 +267,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][13][Applets][46][Configuration]
-PreloadWeight=0
+PreloadWeight=12
 
 [Containments][13][Applets][46][Configuration][ConfigDialog]
 DialogHeight=682
@@ -208,14 +291,14 @@ plugin=org.kde.plasma.clipboard
 PreloadWeight=0
 
 [Containments][13][Applets][49][Shortcuts]
-global=
+global=Meta+C
 
 [Containments][13][Applets][50]
 immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][13][Applets][50][Configuration]
-PreloadWeight=0
+PreloadWeight=32
 
 [Containments][13][Applets][50][Configuration][ConfigDialog]
 DialogHeight=660
@@ -224,19 +307,12 @@ DialogWidth=880
 [Containments][13][Applets][50][Configuration][General]
 showPercentage=true
 
-[Containments][13][Applets][52]
-immutability=1
-plugin=org.kde.plasma.keyboardindicator
-
-[Containments][13][Applets][52][Configuration]
-PreloadWeight=0
-
 [Containments][13][Applets][53]
 immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][13][Applets][53][Configuration]
-PreloadWeight=0
+PreloadWeight=17
 
 [Containments][13][Applets][54]
 immutability=1
@@ -260,24 +336,24 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][13][Applets][56][Configuration]
-PreloadWeight=11
+PreloadWeight=0
 
 [Containments][13][Applets][59]
 immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][13][Applets][59][Configuration]
-PreloadWeight=1
+PreloadWeight=47
 
 [Containments][13][ConfigDialog]
-DialogHeight=868
-DialogWidth=1120
+DialogHeight=869
+DialogWidth=1273
 
 [Containments][13][General]
-extraItems=org.kde.plasma.notifications,org.kde.plasma.nightcolorcontrol,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.battery,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.plasma.keyboardindicator,org.kde.plasma.volume,org.kde.plasma.keyboardlayout
-hiddenItems=org.kde.plasma.mediacontroller,Yakuake,org.kde.kdeconnect,org.kde.plasma.keyboardindicator,org.kde.plasma.nightcolorcontrol,org.kde.plasma.clipboard,Caprine1,org.kde.plasma.battery,Optimus Manager Qt
-knownItems=org.kde.plasma.notifications,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.plasma.nightcolorcontrol,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.battery,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout
-shownItems=org.kde.plasma.volume
+extraItems=org.kde.plasma.notifications,org.kde.plasma.nightcolorcontrol,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.battery,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.plasma.volume,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.printmanager
+hiddenItems=org.kde.plasma.mediacontroller,Yakuake,org.kde.kdeconnect,org.kde.plasma.nightcolorcontrol,org.kde.plasma.clipboard,Caprine1,Optimus Manager Qt,discord1,zoom,droidcam,KWin,obs
+knownItems=org.kde.plasma.notifications,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.plasma.nightcolorcontrol,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.battery,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod
+scaleIconsToFit=true
 
 [Containments][15]
 activityId=
@@ -287,6 +363,7 @@ formfactor=2
 immutability=1
 isPreferredForShortcuts=false
 lastScreen=11
+layoutId=
 location=3
 name=
 onPrimary=true
@@ -299,6 +376,20 @@ viewType=0
 visibility=0
 wallpaperplugin=org.kde.image
 
+[Containments][15][Applets][123]
+immutability=1
+plugin=org.kde.plasma.appmenu
+
+[Containments][15][Applets][123][Configuration]
+PreloadWeight=0
+
+[Containments][15][Applets][123][Configuration][ConfigDialog]
+DialogHeight=840
+DialogWidth=1140
+
+[Containments][15][Applets][123][Shortcuts]
+global=Alt+M
+
 [Containments][15][Applets][85]
 immutability=1
 plugin=org.communia.apptitle
@@ -307,48 +398,38 @@ plugin=org.communia.apptitle
 PreloadWeight=0
 
 [Containments][15][Applets][85][Configuration][ConfigDialog]
-DialogHeight=1335
-DialogWidth=2560
+DialogHeight=798
+DialogWidth=1140
 
 [Containments][15][Applets][85][Configuration][General]
-noWindowText=Desktop
+fixedWidth=1000
+noWindowText=Hello, Asil!
 noWindowType=text
 showApplicationIcon=true
 useWindowTitleReplace=true
-
-[Containments][15][Applets][86]
-immutability=1
-plugin=org.kde.plasma.appmenu
-
-[Containments][15][Applets][86][Configuration]
-PreloadWeight=0
-
-[Containments][15][Applets][86][Configuration][ConfigDialog]
-DialogHeight=1250
-DialogWidth=2552
 
 [Containments][15][Configuration]
 PreloadWeight=0
 
 [Containments][15][General]
 alignmentUpgraded=true
-appletOrder=85;86
+appletOrder=85;123
 appletShadowsEnabled=false
 autoSizeEnabled=false
 backgroundRadius=30
 configurationSticker=true
 dragActiveWindowEnabled=true
+hideFloatingGapForMaximized=true
 iconSize=36
 inConfigureAppletsMode=true
 lastSidebarVisibilityMode=9
-lengthExtMargin=1
-lockedZoomApplets=85;86
+lockedZoomApplets=85;123
 maxLength=50
-minLength=50
+minLength=45
 panelOutline=true
 panelShadows=false
 panelSize=100
-panelTransparency=5
+panelTransparency=4
 screenEdgeMargin=7
 scrollAction=ScrollDesktops
 shadowsUpgraded=true
@@ -358,7 +439,7 @@ tasksUpgraded=true
 themeColors=SmartThemeColors
 thickMargin=30
 titleTooltips=false
-userBlocksColorizingApplets=85;86
+userBlocksColorizingApplets=85
 zoomLevel=0
 
 [Containments][15][Indicator]
@@ -377,6 +458,7 @@ formfactor=2
 immutability=1
 isPreferredForShortcuts=false
 lastScreen=11
+layoutId=
 location=3
 name=
 onPrimary=true
@@ -401,14 +483,14 @@ DialogHeight=766
 DialogWidth=1029
 
 [Containments][16][Applets][115][Configuration][General]
-maximumWidth=310
+maximumWidth=320
 
 [Containments][16][Applets][116]
 immutability=1
 plugin=org.kde.plasma.kicker
 
 [Containments][16][Applets][116][Configuration]
-PreloadWeight=97
+PreloadWeight=100
 
 [Containments][16][Applets][116][Configuration][ConfigDialog]
 DialogHeight=868
@@ -439,6 +521,7 @@ backgroundRadius=30
 configurationSticker=true
 dragActiveWindowEnabled=true
 durationTime=x1
+hideFloatingGapForMaximized=true
 iconSize=36
 inConfigureAppletsMode=true
 lengthExtMargin=6
