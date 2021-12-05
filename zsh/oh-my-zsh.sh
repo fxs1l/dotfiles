@@ -1,0 +1,1 @@
+/home/fxs1l/.oh-my-zsh/oh-my-zsh.sh

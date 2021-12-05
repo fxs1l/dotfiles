@@ -1,0 +1,1 @@
+/home/fxs1l/.bashrc
