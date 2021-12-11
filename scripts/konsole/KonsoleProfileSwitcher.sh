@@ -1,5 +1,5 @@
 #!/bin/zsh
-DefaultProfile="Moe-Blur"
+DefaultProfile="Otto-Blur"
 NewProfile="No Blur"
 for n in $(qdbus | grep -i konsole); do
 

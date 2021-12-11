@@ -123,3 +123,4 @@ export PATH=$PATH:~/Android/cmdline-tools/latest/bin
 # zsh-autocomplete configuration
 zstyle ':autocomplete:*' widget-style menu-complete
 alias nvim='sh /home/fxs1l/.config/scripts/KonsoleProfileSwitcher.sh'
+alias t='todo.sh'
