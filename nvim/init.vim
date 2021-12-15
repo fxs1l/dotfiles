@@ -68,15 +68,10 @@ nmap <c-k> <c-w>k
 nmap <s-l> :wincmd < <CR>
 nmap <s-h> :wincmd > <CR>
 nmap <s-k> :wincmd + <CR>
-nmap <s-j> :win cmd - <CR>
+nmap <s-j> :wincmd - <CR>
 
 " Switch window positons
-function! SwitchWindow()
-  CHADopen
-  :wincmd r <CR>
-  CHADopen
-endfunction
-nmap <s-r> call: SwitchWindow() <CR> 
+nmap <s-r> :wincmd r <CR> 
 
 "Switch to next buffer"
 nmap <a-right> :bnext <CR>
@@ -108,15 +103,15 @@ autocmd BufEnter * if (winnr("$") == 1 && &filetype == "CHADTree") | q | endif
 " ------------------------------------------------------
 """ Airline configuration
 
-let g:airline#extensions#tabline#enabled = 2
+let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#right_sep = ' '
 let g:airline#extensions#tabline#right_alt_sep = '|'
-let g:airline_left_sep = ' '
+let g:airline_left_sep = ''
 let g:airline_left_alt_sep = '|'
-let g:airline_right_sep = ' '
+let g:airline_right_sep = ''
 let g:airline_right_alt_sep = '|'
 let g:airline_theme= 'atomic'
 
