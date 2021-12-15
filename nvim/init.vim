@@ -78,7 +78,7 @@ function! SwitchWindow()
 endfunction
 nmap <s-r> call: SwitchWindow() <CR> 
 
-"Switch to next tab"
+"Switch to next buffer"
 nmap <a-right> :bnext <CR>
 nmap <a-left> :bprevious <CR>
 "------------------------------------------------------
