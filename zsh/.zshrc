@@ -7,13 +7,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-eval "`dircolors -b ~/.dircolors`"
-alias ls='ls --color=auto'
-#alias neofetch='neofetch --source /home/fxs1l/Documents/Git/ascii/pokemon/charizard --size 25%'
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
+# Path to oh-my-zsh installation.
 ZSH_DISABLE_COMPFIX=true
 export ZSH="/home/fxs1l/.oh-my-zsh"
 
@@ -86,10 +83,11 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git vi-mode flutter)
 
+# User configuration
+
 source $ZSH/oh-my-zsh.sh
 export PATH=$PATH:/usr/bin/google-chrome-stable
 export PATH=$PATH:~/Android/cmdline-tools/latest/bin
-# User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -117,10 +115,7 @@ export PATH=$PATH:~/Android/cmdline-tools/latest/bin
 
 # Enable vi mode
 # bindkey -v
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# zsh-autocomplete configuration
-zstyle ':autocomplete:*' widget-style menu-complete
-alias nvim='sh /home/fxs1l/.config/scripts/KonsoleProfileSwitcher.sh'
-alias t='todo.sh'
