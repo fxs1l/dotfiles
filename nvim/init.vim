@@ -9,6 +9,8 @@ Plug 'tpope/vim-sleuth'
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'vimlab/split-term.vim'
 call plug#end()
 
 " ------------------------------------------------------
@@ -40,17 +42,17 @@ set smartcase           " ... unless the query has capital letters.
 set gdefault            " Use 'g' flag by default with :s/foo/bar/.
 
 " Use <leader>c to clear the highlighting of :set hlsearch.
-nnoremap <leader>c :nohlsearch
+nnoremap <leader>c :nohlsearch <CR>
 
 " Search and Replace
 nmap <Leader>s :%s//g<Left><Left>
 
 " ------------------------------------------------------ 
-""" Window split navigation 
-" reference: https://vim.fandom.com/wiki/Switch_between_Vim_window_splits_easily
+""" Window navigation
+" reference: 
+" https://vim.fandom.com/wiki/Switch_between_Vim_window_splits_easily
 
-
-"Ctrl+kjhl navigation
+" Ctrl+kjhl navigation
 nmap <c-h> <c-w>h
 nmap <c-l> <c-w>l
 nmap <c-j> <c-w>j
@@ -62,7 +64,24 @@ nmap <c-k> <c-w>k
 "nmap <silent> <A-Left> :wincmd h<CR>
 "nmap <silent> <A-Right> :wincmd l<CR>
 
-" ------------------------------------------------------
+" Increase window height 
+nmap <s-l> :wincmd < <CR>
+nmap <s-h> :wincmd > <CR>
+nmap <s-k> :wincmd + <CR>
+nmap <s-j> :win cmd - <CR>
+
+" Switch window positons
+function! SwitchWindow()
+  CHADopen
+  :wincmd r <CR>
+  CHADopen
+endfunction
+nmap <s-r> call: SwitchWindow() <CR> 
+
+"Switch to next tab"
+nmap <a-right> :bnext <CR>
+nmap <a-left> :bprevious <CR>
+"------------------------------------------------------
 """ CHAD Tree configuration 
 
 " Toggle CHADTree window
@@ -81,6 +100,11 @@ endif
 " Exit Vim if CHADtree is the only window remaining 
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == "CHADTree") | q | endif
 
+" If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
+" autocmd BufEnter * if bufname('#') =~ 'CHADTree\d\+' && bufname('%') !~ 'CHADTree\d\+' && winnr('$') > 1 |
+"     \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
+
+
 " ------------------------------------------------------
 """ Airline configuration
 
@@ -97,9 +121,23 @@ let g:airline_right_alt_sep = '|'
 let g:airline_theme= 'atomic'
 
 "------------------------------------------------------
+""" Split-term configuration
+
+set splitbelow
+set splitright
+noremap <C-T> :5Term <CR>
+
+"------------------------------------------------------
+""" Indent blackine configuration
+let g:indent_blankline_filetype_exclude = ['help']
+
+"------------------------------------------------------
 """ Optional configs 
 
+" Allow the use of the mouse
+set mouse=a
+
 " Eliminate using additional keys
-nnoremap ; :
+" nnoremap ; :
 " nnoremap Q @q
 

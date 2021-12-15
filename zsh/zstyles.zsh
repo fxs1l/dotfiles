@@ -2,4 +2,5 @@
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
 # zsh-autocomplete configuration
-zstyle ':autocomplete:*' widget-style menu-complete
+# zstyle ':autocomplete:*' widget-style menu-complete
+
