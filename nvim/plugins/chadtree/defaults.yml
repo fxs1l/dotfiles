@@ -135,7 +135,7 @@ view:
   window_options:
     cursorline: true
     foldenable: false
-    number: true 
+    number: false 
     relativenumber: false
     signcolumn: "no"
     winfixwidth: true

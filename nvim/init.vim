@@ -86,10 +86,15 @@ nnoremap <c-o> <cmd>CHADopen<cr>
 "autocmd VimEnter * CHADopen --nofocus 
 
 " Start CHADTree. If a file is specified, move the cursor to its window.
+"autocmd StdinReadPre * let s:std_in=1
+"if argc() > 0 || exists("s:std_in") 
+"autocmd VimEnter * CHADopen --nofocus
+"endif
+
+" Start CHADTree when neovim starts with a directory argument.
 autocmd StdinReadPre * let s:std_in=1
-if argc() > 0 || exists("s:std_in") 
-  autocmd VimEnter * CHADopen --nofocus
-endif
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') |
+    \ execute 'CHADopen' argv()[0] | wincmd p | enew | execute 'cd '.argv()[0] | endif
 
 
 " Exit Vim if CHADtree is the only window remaining 
