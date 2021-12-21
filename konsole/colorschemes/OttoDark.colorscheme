@@ -1,5 +1,5 @@
 [Background]
-Color=44,55,70
+Color=41,45,62
 
 [BackgroundFaint]
 Color=62,76,92
@@ -26,7 +26,7 @@ Color=253,70,110
 Color=253,46,89
 
 [Color2]
-Color=42,172,170
+Color=83,157,229
 
 [Color2Faint]
 Color=46,189,187
@@ -92,5 +92,5 @@ Color=240,218,218
 Blur=true
 ColorRandomization=true
 Description=Otto-Dark
-Opacity=0.93
+Opacity=1
 Wallpaper=

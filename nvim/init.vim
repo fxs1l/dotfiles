@@ -3,6 +3,7 @@ call plug#begin()
 Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
 Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
+Plug 'tpope/vim-fugitive'
 Plug 'jiangmiao/auto-pairs'
 Plug 'machakann/vim-sandwich'
 Plug 'tpope/vim-sleuth'
@@ -11,16 +12,29 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'vimlab/split-term.vim'
+Plug 'lambdalisue/suda.vim'
+Plug 'drewtempelmeyer/palenight.vim'
 call plug#end()
 
 " ------------------------------------------------------
-
 " Map the leader key to SPACE
 let mapleader="\<SPACE>"
 
+" --------- Palenight colorscheme configuration --------
+
+set background=dark
+colorscheme palenight
+
+if (has("termguicolors"))
+  set termguicolors
+endif
+
+" Italics for my favorite color scheme
+let g:palenight_terminal_italics=1
+
 " ------------------------------------------------------
-""" Line numbering
-set number " Enable line numbering
+" Line numbering
+set number 
 
 " Relative numbering
 function! NumberToggle()
@@ -34,8 +48,7 @@ endfunc
 
 " Toggle between normal and relative numbering.
 nnoremap <leader>r :call NumberToggle()<cr>
-" ------------------------------------------------------
-""" Search configuration
+" --------------- Search configuration -----------------
 
 set ignorecase          " Make searching case insensitive
 set smartcase           " ... unless the query has capital letters.
@@ -47,8 +60,8 @@ nnoremap <leader>c :nohlsearch <CR>
 " Search and Replace
 nmap <Leader>s :%s//g<Left><Left>
 
-" ------------------------------------------------------ 
-""" Window navigation
+" --------------- Window navigation --------------------
+
 " reference: 
 " https://vim.fandom.com/wiki/Switch_between_Vim_window_splits_easily
 
@@ -73,11 +86,14 @@ nmap <s-j> :wincmd - <CR>
 " Switch window positons
 nmap <s-r> :wincmd r <CR> 
 
-"Switch to next buffer"
+" Switch to next buffer"
 nmap <a-right> :bnext <CR>
 nmap <a-left> :bprevious <CR>
-"------------------------------------------------------
-""" CHAD Tree configuration 
+
+" Close buffer
+nmap <c-w> :bd <CR>
+
+"----------- CHADTree configuration ---------------------
 
 " Toggle CHADTree window
 nnoremap <c-o> <cmd>CHADopen<cr>
@@ -105,34 +121,43 @@ autocmd BufEnter * if (winnr("$") == 1 && &filetype == "CHADTree") | q | endif
 "     \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
 
 
-" ------------------------------------------------------
-""" Airline configuration
+" ------------- Suda configuration --------------------
+
+cnoremap w!! :SudaWrite <CR>
+
+"------------- Airline configuration ------------------
 
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
-let g:airline#extensions#tabline#right_sep = ' '
-let g:airline#extensions#tabline#right_alt_sep = '|'
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = '|'
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = '|'
-let g:airline_theme= 'atomic'
+"let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline_symbols = {}
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ' ln:' 
+let g:airline_symbols.maxlinenr = ' '
+let g:airline_symbols.dirty='⚡'
+let g:airline_theme= 'palenight'
+"let g:airline_symbols.linenr = '☰'
+"  
 
-"------------------------------------------------------
-""" Split-term configuration
+"---------- Split-term configuration -------------------
 
 set splitbelow
 set splitright
 noremap <C-T> :5Term <CR>
 
-"------------------------------------------------------
-""" Indent blackine configuration
-let g:indent_blankline_filetype_exclude = ['help']
+"-------- Indent blankhine configuration ---------------
 
-"------------------------------------------------------
-""" Optional configs 
+let g:indent_blankline_filetype_exclude = ['help']
+let g:indentLine_setColors=0
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+let g:indentLine_concealcursor = 'inc'
+let g:indentLine_conceallevel = 2
+
+"--------------- Optional configs ---------------------
 
 " Allow the use of the mouse
 set mouse=a
@@ -140,4 +165,3 @@ set mouse=a
 " Eliminate using additional keys
 " nnoremap ; :
 " nnoremap Q @q
-

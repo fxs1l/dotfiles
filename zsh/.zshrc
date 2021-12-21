@@ -87,6 +87,7 @@ plugins=(git vi-mode flutter)
 source $ZSH/oh-my-zsh.sh
 export PATH=$PATH:/usr/bin/google-chrome-stable
 export PATH=$PATH:~/Android/cmdline-tools/latest/bin
+export PATH=$PATH:~/.local/bin
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
