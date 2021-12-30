@@ -56,7 +56,7 @@
     # =========================[ Line #1 ]=========================
     status                  # exit code of the last command
     command_execution_time  # duration of the last command
-    background_jobs         # presence of background jobs
+    #background_jobs         # presence of background jobs
     #direnv                  # direnv status (https://direnv.net/)
     #asdf                    # asdf version manager (https://github.com/asdf-vm/asdf)
     #virtualenv              # python virtual environment (https://docs.python.org/3/library/venv.html)
@@ -93,7 +93,7 @@
     #google_app_cred         # google application credentials (https://cloud.google.com/docs/authentication/production)
     #toolbox                 # toolbox name (https://github.com/containers/toolbox)
     context                 # user@hostname
-    nordvpn                 # nordvpn connection status, linux only (https://nordvpn.com/)
+    #nordvpn                 # nordvpn connection status, linux only (https://nordvpn.com/)
     #ranger                  # ranger shell (https://github.com/ranger/ranger)
     #nnn                     # nnn shell (https://github.com/jarun/nnn)
     #xplr                    # xplr shell (https://github.com/sayanarijit/xplr)
@@ -106,9 +106,9 @@
     # disk_usage            # disk usage
     # ram                   # free RAM
     # swap                  # used swap
-    todo                    # todo items (https://github.com/todotxt/todo.txt-cli)
-    #timewarrior             # timewarrior tracking status (https://timewarrior.net/)
-    #taskwarrior             # taskwarrior task count (https://taskwarrior.org/)
+    #todo                    # todo items (https://github.com/todotxt/todo.txt-cli)
+    timewarrior             # timewarrior tracking status (https://timewarrior.net/)
+    taskwarrior             # taskwarrior task count (https://taskwarrior.org/)
     # time                  # current time
     # =========================[ Line #2 ]=========================
     #newline

@@ -14,6 +14,7 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'vimlab/split-term.vim'
 Plug 'lambdalisue/suda.vim'
 Plug 'drewtempelmeyer/palenight.vim'
+" Plug 'blindFS/vim-taskwarrior'
 call plug#end()
 
 " ------------------------------------------------------
@@ -91,7 +92,7 @@ nmap <a-right> :bnext <CR>
 nmap <a-left> :bprevious <CR>
 
 " Close buffer
-nmap <c-w> :bd <CR>
+nmap <s-w> :bd <CR>
 
 "----------- CHADTree configuration ---------------------
 
@@ -118,8 +119,11 @@ autocmd BufEnter * if (winnr("$") == 1 && &filetype == "CHADTree") | q | endif
 
 " If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
 " autocmd BufEnter * if bufname('#') =~ 'CHADTree\d\+' && bufname('%') !~ 'CHADTree\d\+' && winnr('$') > 1 |
-"     \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
+"     \ let buf=bufnr() | buffer# | execute 
+"     normal! \<C-W>w" | execute 'buffer'.buf | endif
 
+"----------- COQ configuration ---------------------
+autocmd VimEnter * execute 'COQnow -s'
 
 " ------------- Suda configuration --------------------
 
@@ -160,7 +164,7 @@ let g:indentLine_conceallevel = 2
 "--------------- Optional configs ---------------------
 
 " Allow the use of the mouse
-set mouse=a
+" set mouse=a
 
 " Eliminate using additional keys
 " nnoremap ; :

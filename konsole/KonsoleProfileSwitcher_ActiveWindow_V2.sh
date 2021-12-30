@@ -14,7 +14,8 @@ done
 
 
 #command to execute
-nvim $@
+#nvim $@
+taskwarrior-tui $@
 #command to execute
 
 
