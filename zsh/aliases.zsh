@@ -12,13 +12,13 @@ alias pwd=ptpwd
 #alias nvim='sh /home/$USER/.config/scripts/neovim_profile_switcher.sh'
 
 # taskwarrior alias
-alias t='task'
+#alias t='task'
 
 # pipes.sh alias
 alias pipes='pipes.sh'
 
 # neo-matrix alias
-alias neo='neo-matrix'
+alias neo='neo-matrix -D'
 
 # Vim quit alias for leaving the terminal
 alias :q='exit'
