@@ -15,7 +15,9 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'vimlab/split-term.vim'
 Plug 'lambdalisue/suda.vim'
 Plug 'preservim/nerdtree'
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+"Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+Plug 'lervag/vimtex'
+Plug 'JamshedVesuna/vim-markdown-preview'
 "Plug 'vim-airline/vim-airline'
 "Plug 'vim-airline/vim-airline-themes'
 call plug#end()
@@ -164,3 +166,7 @@ let g:indentLine_conceallevel = 2
 " Eliminate using additional keys
 " nnoremap ; :
 " nnoremap Q @q
+"
+" normal/insert
+let vim_markdown_preview_use_xdg_open=1
+let vim_markdown_preview_toggle=1
