@@ -8,7 +8,7 @@
   "notification-icon-size": 64,
   "notification-body-image-height": 200,
   "notification-body-image-width": 200,
-  "timeout": 5,
+  "timeout": 3,
   "timeout-low": 5,
   "timeout-critical": 0,
   "fit-to-screen": true,
@@ -68,7 +68,7 @@
       "image-radius": 12
     },
     "volume": {
-      "label": "🔊"
+      "label": "󰕾"
     },
     "menubar": {
       "menu#power-buttons": {
@@ -94,33 +94,33 @@
         ]
       },
       "menu#screenshot-buttons": {
-        "label": "📷",
+        "label": "󰄀",
         "position": "left",
         "actions": [
           {
-            "label": "📸   All Screens",
+            "label": "󰄁   All Screens",
             "command": "grimblast save screen"
           },
           {
-            "label": "📸   Current Active Screen",
+            "label": "󰄁   Current Active Screen",
             "command": "grimblast save output"
           },
           {
-            "label": "📸   Current Active Window",
+            "label": "󰄁   Current Active Window",
             "command": "grimblast save active"
           },
           {
-            "label": "📸   Select a region",
+            "label": "󰄁   Select a region",
             "command": "grimblast save area"
           }
         ]
       },
       "menu#screencast-buttons": {
-        "label": "🎥",
+        "label": "󰕧",
         "position": "left",
         "actions": [
           {
-            "label": "🎥   Start OBS-STUDIO",
+            "label": "󰕧   Start OBS-STUDIO",
             "command": "obs"
           }
         ]
@@ -129,24 +129,8 @@
     "buttons-grid": {
       "actions": [
         {
-          "label": "🔉",
+          "label": "󱡫",
           "command": "pavucontrol"
-        },
-        {
-          "label": "🎵",
-          "command": "rhythmbox"
-        },
-        {
-          "label": "📧",
-          "command": "thunderbird"
-        },
-        {
-          "label": "🗒️",
-          "command": "notion-app"
-        },
-        {
-          "label": "🌐",
-          "command": "firefox"
         }
       ]
     }

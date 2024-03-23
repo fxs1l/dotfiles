@@ -1,0 +1,6 @@
+
+/* ------------------------------- NAV BAR-------------------------------------- */
+
+/* first, that ugly 1px black border on the bottom */
+#navigator-toolbox { border-bottom: 0px solid light-dark(rgb(204, 204, 204), hsl(240, 5%, 5%)) !important; }
+

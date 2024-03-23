@@ -1,0 +1,124 @@
+{
+	"layer": "top",
+	"modules-left": ["custom/powermenu", "hyprland/workspaces", "cpu", "memory", "temperature"],
+	"modules-center": ["hyprland/window"],
+	"modules-right": ["pulseaudio", "battery", "backlight", "custom/wl-gammarelay-temperature", "clock", "network"],
+	"custom/wl-gammarelay-temperature": {
+        "format": "󱩌 {}",
+        "exec": "wl-gammarelay-rs watch {t}",
+        "on-scroll-up": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n +100",
+        "on-scroll-down": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n -100"
+    },
+	"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 5,
+		"format": "{icon} {volume}%",
+		"format-muted": "  ",
+		"format-bluetooth": "{icon} {volume}%",
+		"on-click":"amixer -D pulse sset Master toggle",
+		"scroll-step": 5,
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "󱖡",
+            "headset": "󰋋 ",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["󰝟", "󰕿", "󰖀", "󰕾"]
+        }
+	},
+	"custom/powermenu": {
+		"format": "",
+		"interval": "once",
+		"on-click": "wlogout",
+		"tooltip": false,
+		"signal": 8
+	},
+    "hyprland/workspaces": {
+        "disable-scroll-wraparound": true,
+        "disable-scroll": false,
+        "all-outputs": true,
+        "tooltip": false,
+        "format": "{name}: {icon}",
+        "format-icons": {
+            "2": "",
+            "1": "󰈹",
+            "3": "󰝚",
+            "5": "",
+            "4": "",
+            "urgent": "",
+            "focused": "",
+            "default": ""
+        }
+    },
+	 "temperature": {
+        // "thermal-zone": 2,
+        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        // "critical-threshold": 80,
+        // "format-critical": "{temperatureC}°C ",
+        "format": "{temperatureC}°C "
+    },
+	"hyprland/window": {
+        "format": "{}",
+        "max-length": 50,
+        "rewrite": {
+            "Mozilla Firefox": " 󰈹 ",
+            "(.*) — Mozilla Firefox": "$1 — 󰈹 ",
+            "(.*) - Youtube — Mozilla Firefox": "$1 — 󰗃 ",
+            "(.*) - waybarprefix": "$1 —  ",
+            "(.*) - NVIM": "$1 —  "
+        }
+    },
+	"backlight": {
+		"device": "acpi_video0",
+		"format": "{icon}  {}%",
+		"format-icons": ["󱃓", "󰪞", "󰪟", "󰪠", "󰪡", "󰪢", "󰪣", "󰪤", "󰪥"],
+		"interval": 1
+	},
+	"battery": {
+		"states": {
+			"good": 100,
+			"warning": 20,
+			"critical": 10
+		},
+		"format": "{icon}  {capacity}%",
+		"format-charging": "  {capacity}%",
+		"format-plugged": "  {capacity}%",
+		"format-alt": "{time} {icon}",
+		"format-icons": ["", "", "", "", ""]
+	},
+	"tray":{
+		"icon-size":18,
+		"show-passive-items":true,
+		"spacing": 10,
+		"reverse-direction": true
+	},
+	"clock": {
+	"interval": 60,
+  	"tooltip": true,
+  	"format": "󰥔 {:%I:%M %p}",
+  	"tooltip-format": "{:%Y-%m-%d}",
+	},
+	"cpu": {
+        "interval": 2,
+        "format": "{}% 󰍛",
+        "max-length": 10
+    },
+    "memory": {
+        "interval": 2,
+        "format": "{}% ",
+        "max-length": 10
+    },
+    "network": {
+        "interface": "wlan0",
+        "format": "{ifname}",
+        "format-wifi": "  {essid} ({signalStrength}%)",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "format-disconnected": "", //An empty format will hide the module.
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50
+    }
+}

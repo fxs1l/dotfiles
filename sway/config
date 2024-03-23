@@ -30,7 +30,7 @@ output eDP-1 scale 1.25
 #
 # Set wallpaper
 #
-output * bg "/home/fxs1l/Pictures/Desktop Wallpapers/minimal-nord.png" fill
+output * bg "/home/fxs1l/Pictures/Wallpapers/minimal-nord.png" fill
 ### Input configuration
 input "1267:12703:ASUE1209:00_04F3:319F_Touchpad" {
     xkb_layout "us,hu,ua,ru"

@@ -2,15 +2,17 @@
  * vim: ft=less
  */
 
-@define-color noti-bg rgb(22, 25, 37);
+/* @define-color noti-bg rgb(22, 25, 37); */
+@define-color noti-bg #2E3440;
 @define-color cc-bg alpha(@noti-bg, 0.9);
 
 @define-color noti-border-color @noti-bg;
-@define-color noti-bg-hover rgb(39,44,66);
+@define-color noti-bg-hover #8fbcbb;
 @define-color noti-close-bg rgba(255, 255, 255, 0.1);
 @define-color noti-close-bg-hover rgba(255, 255, 255, 0.15);
 
-@define-color bg-selected rgb(137,180,250);
+/* @define-color bg-selected rgb(137,180,250); */
+@define-color bg-selected #88c0d0;
 
 
 /* Window behind control center and on all other monitors */
@@ -23,7 +25,7 @@
 .control-center {
   background: @cc-bg;
   border-radius: 16px;
-  border: 2px solid #cba6f7;
+  border: 2px solid #88c0d0;
 }
 
 .control-center-list {
@@ -37,7 +39,7 @@
 
 /* Single row in panel */
 .notification-row {
-  outline: none;
+  /* outline: 2px solid blue; */
   background: transparent;
   border-radius: 16px;
   transition: all 0.2s ease-in-out;
@@ -58,15 +60,15 @@
 
 /* specific urgency colors */
 .critical .summary {
-  color: #f38ba8;
+  color: #bf616a;
 }
 
 .notification-content {
   outline: none;
-  margin: 10px;
-  padding:8px;
-  border-radius: 16px;
-  border: 2px solid #cba6f7;
+  margin: 0px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #88c0d0;
   background: @cc-bg;
 }
 
@@ -164,6 +166,7 @@
 .widget-title {
   margin: 8px;
   font-size: 1.5rem;
+  outline: 5px solid white;
 }
 .widget-title > button {
   font-size: initial;

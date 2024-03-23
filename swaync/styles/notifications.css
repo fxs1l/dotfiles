@@ -13,21 +13,21 @@
 
 .notification-row:focus,
 .notification-row:hover {
-    background: alpha(@color6, 0.2);
+    background: alpha(#88c0d0, 0.2);
 }
 
 .notification {
     margin: 6px;
-    box-shadow: 3px 3px 0 0 @color6;
+    box-shadow: 3px 3px 0 0;
     border-radius: 8px 15px 15px 8px;
-    background: alpha(@background, 0.8);
+    background: alpha(#88c0d0, 0.8);
 }
 
 .low {
     border: 1px solid @color3;
 }
 .normal {
-    border: 1px solid @color13;
+    border: 1px solid #88c0d0;
 } /* or color5 */
 .critical {
     background: alpha(black, 0.89);

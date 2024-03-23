@@ -1,0 +1,45 @@
+/* -------------------------------NOW HIDE-------------------------------------- */
+/*
+#PersonalToolbar, #tab-notification-deck,
+.global-notificationbox,
+#main-window:not([inDOMFullscreen]) > body > #browser
+{ margin-left: var(--uc-vertical-tabs-width) !important;}
+*/
+/*
+	To always show Tabs, never hide, follow the steps below 
+	 1. Enable the code above
+	 2. Disable the code below, or delete
+*/
+/*
+	power users and neat freaks goto:
+	[ vertical-tabs.css ] ctrl+f to find [ body > #browser ]
+	paste the margin-left variable above, then delete this file.
+*/
+
+/* -------------------------------NOWWW HIDE-------------------------------------- */
+
+
+
+#tabbrowser-tabs {
+min-width: 40px !important;
+width: 40px !important;
+max-width: 40px !important;
+border: 0px !important;
+}
+#main-window[sizemode="fullscreen"]
+#tabbrowser-tabs {
+min-width: 40px !important;
+width: 40px !important;
+max-width: 40px !important;
+}
+#main-window[sizemode="fullscreen"] #TabsToolbar-customization-target
+{top: 0 !important}
+
+#tabbrowser-tabs {
+transition: min-width 80ms linear 300ms !important;
+min-width: 40px !important;
+will-change: min-width; padding: 0 !important;}
+
+#tabbrowser-tabs:hover {
+min-width: 220px !important;
+transition-delay: 0ms !important;}
