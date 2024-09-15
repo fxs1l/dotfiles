@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Check if any media is playing
+status=$(playerctl status)
+
+if [[ "$status" == "Playing" ]]; then
+    echo "Video is playing."
+else
+    echo "Video is paused, stopped, or in an unknown state."
+    pidof hyprlock || hyprlock
+fi

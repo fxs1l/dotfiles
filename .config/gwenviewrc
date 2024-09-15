@@ -1,0 +1,69 @@
+[$Version]
+update_info=gwenview.upd:SideBar_StatusBar_Rename,gwenview.upd:ImageView_AlphaBackgroundMode_Update,gwenview.upd:DeleteThumbnailSetting_Rename
+
+[Crop]
+CropAdvancedSettingsEnabled=true
+CropRatioHeight=1
+CropRatioIndex=1
+CropRatioWidth=1
+
+[General]
+LastUsedVersion=210800
+SideBarPage=operations
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=32
+Recent Files[$e]=file:$HOME/bacud.png,file:$HOME/Scanned Documen2t.png,file:$HOME/salva.png,file:$HOME/joyce.png,file:$HOME/gelo.png,file:$HOME/denden.png
+Recent URLs[$e]=file:$HOME/,file:$HOME/Documents/
+iconViewIconSize=64
+
+[MainWindow]
+2560x1440 screen: Height=666
+2560x1440 screen: Width=1254
+2560x1440 screen: XPosition=1290
+2560x1440 screen: YPosition=759
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+eDP=eDP
+eDP Height 2560x1440 eDP=1359
+eDP Width 2560x1440 eDP=2536
+eDP XPosition 2560x1440 eDP=0
+eDP YPosition 2560x1440 eDP=0
+
+[Print]
+PrintHeight=11.99
+
+[Recent Files]
+File1[$e]=$HOME/Pictures/Linux Screenshots/Screenshot_59.png
+File10[$e]=$HOME/Downloads/Receipt_2024-08-26 23_03_04.394542.png.jpg
+File2[$e]=$HOME/Pictures/Linux Screenshots/Screenshot_58.png
+File3[$e]=$HOME/Pictures/Linux Screenshots/Screenshot_56.png
+File4[$e]=$HOME/Downloads/victor-wembanyama.jpg
+File5[$e]=$HOME/Pictures/Profile/UP Circuit 23B.png
+File6[$e]=$HOME/Pictures/Profile/benguet1.jpg
+File7[$e]=$HOME/Pictures/20240714_14h17m01s_grim.png
+File8[$e]=$HOME/Pictures/MTE 2021 FB Cover.png
+File9[$e]=$HOME/Pictures/Signatures/signature.png
+Name1[$e]=Screenshot_59.png
+Name10[$e]=Receipt_2024-08-26 23_03_04.394542.png.jpg
+Name2[$e]=Screenshot_58.png
+Name3[$e]=Screenshot_56.png
+Name4[$e]=victor-wembanyama.jpg
+Name5[$e]=UP Circuit 23B.png
+Name6[$e]=benguet1.jpg
+Name7[$e]=20240714_14h17m01s_grim.png
+Name8[$e]=MTE 2021 FB Cover.png
+Name9[$e]=signature.png
+
+[SemanticInfoDialog]
+eDP Height 2560x1440 eDP=306
+eDP Width 2560x1440 eDP=426
+
+[SideBar]
+InformationSplitterSizes=230,245
+IsVisible ViewMode=true
+SideBarSplitterSizes=281,636
+
+[ThumbnailView]
+Sorting=Sorting::Date

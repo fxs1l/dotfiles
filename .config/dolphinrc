@@ -1,0 +1,51 @@
+MenuBar=Disabled
+
+[$Version]
+update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detailsmodesettings.upd:move-content-display
+
+[ContextMenu]
+ShowViewMode=false
+
+[ExtractDialog]
+2048x1152 screen: Window-Maximized=true
+DirHistory[$e]=$HOME/Downloads/
+
+[General]
+LockPanels=false
+OpenExternallyCalledFolderInNewTab=true
+RememberOpenedTabs=false
+Version=202
+ViewPropsTimestamp=2022,10,13,15,20,28.789
+
+[IconsMode]
+IconSize=64
+PreviewSize=22
+
+[KFileDialog Settings]
+Places Icons Auto-resize=true
+Places Icons Static Size=22
+
+[KPropertiesDialog]
+2560x1440 screen: Height=786
+2560x1440 screen: Width=745
+eDP Height 1707x960 eDP=681
+eDP Height 2560x1440 eDP=632
+eDP Width 1707x960 eDP=599
+eDP Width 2560x1440 eDP=634
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+
+[Open-with settings]
+CompletionMode=1
+History=lts,neo,neovim,neov,ltspice,mat
+
+[PlacesPanel]
+IconSize=-1
+
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mltpreview,opendocumentthumbnail,svgthumbnail
+
+[Search]
+Location=Everywhere

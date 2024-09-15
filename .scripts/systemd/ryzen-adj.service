@@ -1,0 +1,11 @@
+[Unit]
+Description="Loads RyzenAdj parameters at boot"
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/bash /home/fxs1l/.scripts/cpu_startup.sh
+
+[Install]
+WantedBy=multi-user.target
+

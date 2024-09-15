@@ -1,0 +1,48 @@
+[Desktop Entry]
+FullScreen=false
+
+[FileDialogSize]
+2048x1152 screen: Window-Maximized=true
+
+[General]
+LockSidebar=false
+ShowSidebar=true
+
+[KFileDialog Settings]
+iconViewIconSize=64
+
+[MainWindow]
+2560x1440 screen: Height=666
+2560x1440 screen: Width=1254
+2560x1440 screen: XPosition=1290
+2560x1440 screen: YPosition=759
+ToolBarsMovable=Disabled
+eDP=eDP
+eDP Height 2560x1440 eDP=1359
+eDP Width 2560x1440 eDP=1260
+eDP XPosition 2560x1440 eDP=12
+eDP YPosition 2560x1440 eDP=69
+eDP-1 Height 2560x1440 eDP-1=1358
+eDP-1 Width 2560x1440 eDP-1=1260
+
+[Recent Files]
+File1[$e]=$HOME/Documents/Academics/Y3S2/EEE 192/AF Mapping Table.pdf
+File10[$e]=$HOME/dotfiles/README.md
+File2[$e]=$HOME/SPTP-2024 (1).pdf
+File3[$e]=$HOME/Documents/Academics/To Do/COE 197/1.pdf
+File4[$e]=$HOME/Data/Users/User/Downloads/Thesis/Wireless_Sensor_Networks_Calibration_using_Attention-based_Gated_Recurrent_Units_for_Air_Pollution_Monitoring.md
+File5[$e]=$HOME/Documents/Academics/To Do/Speech 30/Speech30 Syllabus_DeLuna_AY2024-2025.pdf
+File6[$e]=$HOME/Documents/Academics/To Do/SPTP-2024.pdf
+File7[$e]=$HOME/dotfiles/zsh/README.md
+File8[$e]=$HOME/ACASIO, ASIL ANDREI, BANJAO_signed.pdf
+File9[$e]=$HOME/dotfiles/gpuconf/README.md
+Name1[$e]=AF Mapping Table.pdf
+Name10[$e]=README.md
+Name2[$e]=SPTP-2024 (1).pdf
+Name3[$e]=1.pdf
+Name4[$e]=Wireless_Sensor_Networks_Calibration_using_Attention-based_Gated_Recurrent_Units_for_Air_Pollution_Monitoring.md
+Name5[$e]=Speech30 Syllabus_DeLuna_AY2024-2025.pdf
+Name6[$e]=SPTP-2024.pdf
+Name7[$e]=README.md
+Name8[$e]=ACASIO, ASIL ANDREI, BANJAO_signed.pdf
+Name9[$e]=README.md
