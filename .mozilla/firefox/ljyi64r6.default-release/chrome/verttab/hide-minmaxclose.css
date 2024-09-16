@@ -1,0 +1,21 @@
+@namespace xul url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/*.titlebar-buttonbox{ display: none !important; }*/
+
+
+#titlebar{order: 2;
+-moz-appearance: none !important;--tabs-navbar-shadow-size: 0px;
+--uc-menubar-vertical-overlap: 19px;
+}
+
+#navigator-toolbox > div{ display: contents }
+.global-notificationbox, #tab-notification-deck
+{order: 2;}
+#TabsToolbar .titlebar-spacer{ display: none; }
+#navigator-toolbox::after{ display: none !important; }
+
+
+toolbox#navigator-toolbox > toolbar#nav-bar.browser-toolbar{ animation: none; }
+#navigator-toolbox:hover #TabsToolbar{ animation: slidein ease-out 48ms 1 }
+
+#navigator-toolbox:not(:-moz-lwtheme){ background-color: -moz-dialog }
+

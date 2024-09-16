@@ -1,0 +1,4 @@
+body {background: var(--toolbar-bgcolor) !important;}
+
+* {scrollbar-width: auto !important;
+scrollbar-color: var(--lwt-accent-color) rgba(255,255,255, 0) !important;}

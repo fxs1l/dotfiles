@@ -1,0 +1,111 @@
+/* Hide the horizontal tab strip*/
+#TabsToolbar:not([customizing="true"]) {
+    visibility: collapse !important;
+  }
+  /* if the titlebar is also hidden and your browser is maximized,
+   * clicking on the top pixel of the screen should trigger menu items (Fitt’s law)
+   */
+  #toolbar-menubar {
+    padding-top: 0px !important;
+  }
+  
+/* Hide sidebar in fullscreen*/
+#main-window[inFullscreen="true"] #sidebar-box[sidebarcommand="tabcenter-reborn_ariasuni-sidebar-action"],
+#main-window[inFullscreen="true"] #sidebar-box[sidebarcommand="tabcenter-reborn_ariasuni-sidebar-action"] + splitter {
+    visibility: collapse;
+}
+
+/* Hide sidebar header 
+#sidebar-box #sidebar-header {
+    visibility: collapse;
+}
+*/
+
+/* Hide sidebar header but only for Tree Style Tab sidebar */
+
+#sidebar-box[sidebarcommand="tabcenter-reborn_ariasuni-sidebar-action"] #sidebar-header {
+    visibility: collapse;
+}
+/* 
+#sidebar-header {
+    background: #0C0C0D;
+    border-bottom: none !important;
+  }
+  #sidebar-splitter {
+    border-right-color: #0C0C0D !important;
+    border-left-color: #0C0C0D !important;
+  }
+  #sidebar-switcher-target,
+  #sidebar-close {
+    filter: invert(100%);
+  }
+
+  #sidebar-box {
+    max-width: 20px;
+  } */
+  
+/* Collapse in default state and add transition
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] {
+  overflow: hidden;
+  min-width: 40px !important;
+  max-width: 40px !important;
+  transition: all 0.2s ease;
+  border-right: 1px solid #0c0c0d;
+  z-index: 2;
+}
+
+/*Expand to 260px on hover
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]:hover,
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar {
+  min-width: 260px !important;
+  max-width: 260px !important;
+  z-index: 1;
+} */
+
+/* Hide main tabs toolbar */
+#main-window[tabsintitlebar="true"]:not([extradragspace="true"]) #TabsToolbar > .toolbar-items {
+  opacity: 0;
+  pointer-events: none;
+}
+#main-window:not([tabsintitlebar="true"]) #TabsToolbar {
+  visibility: collapse !important;
+}
+
+/* Sidebar min and max width removal */
+#sidebar-box {
+  max-width: none !important;
+  min-width: 0px !important;
+}
+/* Hide splitter, when using Tree Style Tab. */
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] + #sidebar-splitter {
+  display: none !important;
+}
+/* Hide sidebar header, when using Tree Style Tab. */
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
+  visibility: collapse;
+}
+
+/* Shrink sidebar until hovered, when using Tree Style Tab. */
+:root {
+  --thin-tab-width: 30px;
+  --wide-tab-width: 200px;
+}
+#sidebar-box:not([sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]) {
+  min-width: var(--wide-tab-width) !important;
+  max-width: none !important;
+}
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] {
+  position: relative !important;
+  transition: all 100ms !important;
+  min-width: var(--thin-tab-width) !important;
+  max-width: var(--thin-tab-width) !important;
+}
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]:hover {
+  transition: all 200ms !important;
+  transition-delay: 0.2s !important;
+  min-width: var(--wide-tab-width) !important;
+  max-width: var(--wide-tab-width) !important;
+  margin-right: calc((var(--wide-tab-width) - var(--thin-tab-width)) * -1) !important;
+  z-index: 1;
+}
+  

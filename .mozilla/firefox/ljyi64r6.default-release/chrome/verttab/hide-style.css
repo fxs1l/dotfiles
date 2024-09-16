@@ -1,0 +1,92 @@
+/* STYLE
+this only applies to verttabs when show/hide is enabled.
+otherwise, the labels, and edits below will still show you,
+how and what, to change.
+*/
+
+/* ------------------------------------------------------------------------
+
+Refer to the labeled elements before you start styling
+
+Again, this works with any theme and custom CSS for tabs, but you must be
+careful when it comes to changing sizing/positioning
+
+------------------------------------------------------------------------ */
+
+/*style for pinned background*/
+
+.tab-content[pinned=""] { background: rgba(40,67,135,0.8); border-radius:6px;}
+.tab-content[pinned="true"] { background: rgba(40,67,135,0.7); border-radius:6px;}
+.tab-content[pinned="true"], .tab-content[pinned=""]
+{box-shadow: 0 0 4px rgba(0,0,0,.4);}
+
+
+/*pinned close button*/
+
+.tab-close-button[pinned=""]
+{ opacity: 0 !important; }
+.tab-close-button[pinned="true"]
+{ opacity: 0 !important; }
+
+/* not pinned close button */
+
+.tab-close-button:not([pinned="true"])
+{ margin-left: 6px !important; }
+
+/* tab background active tab */
+/*
+.tab-background:is([selected], [multiselected]) {
+  box-shadow: 0 0 4px rgba(0,0,0,.4);}
+*/  
+/* tab background selected */
+/*
+.tab-background:is([selected], [multiselected]) {
+  background-color: light-dark(rgb(255, 255, 255), rgb(66, 65, 77));
+  background-origin: border-box;
+  background-repeat: repeat-x;
+}
+*/
+/*-------------------*/
+
+/*if a tab is pinned, but this tab isnt: do this */
+
+/*website image*/
+#tabbrowser-tabs[style="--tab-min-width: 76px; --tab-overflow-pinned-tabs-width: 34px;"]
+#tabbrowser-arrowscrollbox .tabbrowser-tab:not([pinned="false"]) .tab-stack .tab-content .tab-icon-stack .tab-icon-image:not([pinned="false"]) {
+  margin-left: -4px !important;
+  padding-left: 0px !important;
+  /* fill: currentColor; */
+}
+/*text*/
+/*
+#tabbrowser-tabs[style="--tab-min-width: 76px; --tab-overflow-pinned-tabs-width: 34px;"]
+.tab-stack .tab-content .tab-label-container
+{height: 2.7em;}
+*/
+
+/*-------------------*/
+
+/*if a tab is not pinned, all tabs: do this */
+
+/*website image*/
+#tabbrowser-tabs[style="--tab-min-width: 76px;"]
+#tabbrowser-arrowscrollbox .tabbrowser-tab:not([pinned="false"]) .tab-stack .tab-content .tab-icon-stack .tab-icon-image {
+  margin-left: 3px !important;
+  padding-left: 0px !important;
+  /* fill: currentColor; */
+}
+/*text*/
+/*
+#tabbrowser-tabs[style="--tab-min-width: 76px; --tab-overflow-pinned-tabs-width: 34px;"]
+.tab-stack .tab-content .tab-label-container
+{height: 2.7em;}
+*/
+
+/*-------------------*/
+/* more positioning */
+
+/* hover tab bar, fix new tab button positioning */
+#tabbrowser-tabs:hover #tabs-newtab-button
+{ justify-content: left !important }
+#tabbrowser-tabs:hover #tabs-newtab-button
+{ justify-content: center !important }
